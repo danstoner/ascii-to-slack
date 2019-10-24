@@ -3,13 +3,12 @@
 
 from art import *
 
-font = "unarmed" # Uses only hash chars in output
-
+font = "5x7" # Uses only hash chars in output
 
 # To generalize, do some argparsing instead of these
-emoji = "hand"
-blank_emoji = "black_square"  # would work better with an actually fully blank emoji
-message = "HI"
+emoji = "airhorn1"
+blank_emoji = "blank"  # would work better with an actually fully blank emoji
+message = "HONK"
 
 def emojify(ascii_art):
     emojied = []
