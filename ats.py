@@ -1,5 +1,5 @@
-"""Convert an ascii-art text its representation in emojis,
-   Suitable for copying and pasting into Slack"""
+"""Convert a text message into ascii-art text and its representation in emojis,
+   suitable for copying and pasting into Slack"""
 
 from art import *
 import argparse
@@ -27,14 +27,16 @@ def colonify(emoji_text):
 def main():
     parser = argparse.ArgumentParser(description='text to ascii art to slack')
     # '5x7' is a tall skinny font that only uses hashtags in output
+    # Complete font list is available at
+    #   See https://github.com/sepandhaghighi/art/blob/master/FontList.ipynb
     parser.add_argument("--font", default='5x7', help='name of art lib font to use')
     parser.add_argument("-e", "--emoji", default='smile', help='emoji name')
-    # a completely blank emoji would work best, but this is an ok substitute in the efault emoji pack
+    # a completely blank emoji would work best, but this is an ok substitute in the default emoji pack
     parser.add_argument("-b", "--blank-emoji", default='white_small_square')
     parser.add_argument("-m", "--message", required=True, help='short text message')
     args=parser.parse_args()
     print()
-    print(f"Converting '{args.message}' to representation using {colonify(args.emoji)} emoji...")
+    print(f"Converting '{args.message}' to representation using {colonify(args.emoji)}")
 
     Art = text2art(args.message, args.font)
     Emojified = emojify(Art, args.emoji, args.blank_emoji)
