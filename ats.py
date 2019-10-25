@@ -34,7 +34,7 @@ def main():
     parser.add_argument("-m", "--message", required=True, help='short text message')
     args=parser.parse_args()
     print()
-    print(f"Converting '{args.message}' to representation using {colonify(args.emoji)}")
+    print(f"Converting '{args.message}' to representation using {colonify(args.emoji)} emoji...")
 
     Art = text2art(args.message, args.font)
     Emojified = emojify(Art, args.emoji, args.blank_emoji)
