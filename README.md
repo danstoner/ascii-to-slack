@@ -27,7 +27,11 @@ Converting 'HI' to representation using :smile: emoji...
 :white_small_square::smile::white_small_square::white_small_square::smile::white_small_square::white_small_square::white_small_square::smile::white_small_square::white_small_square::white_small_square::white_small_square:
 :white_small_square::smile::white_small_square::white_small_square::smile::white_small_square::white_small_square::smile::smile::smile::white_small_square::white_small_square::white_small_square:
 :white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square:
+
 ```
+and if you paste the emojified version into Slack, you get something like...
+
+![sample of "Hi"](/hi.png)
 
 For additional option, use `--help` of course:
 
