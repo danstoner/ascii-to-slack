@@ -1,7 +1,7 @@
 # ascii-to-slack
 Convert a text message to ascii art and slack emojis
 
-![sample output "HI"](/hi.png)
+![sample output](/shake.png)
 
 ## Usage
 
